@@ -1,0 +1,147 @@
+:root {
+    --alice-blue: #d9f0ff;
+    --baby-blue-eyes: #A3D5FF;
+    --light-sky-blue: #83C9F4;
+    --violet-blue-crayola: #6F73D2;
+    --glaucos: #7681B3;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header section */
+.header-section {
+    background-color: var(--alice-blue);
+    display: flex;
+    justify-content: center;
+}
+
+
+.header-section > h1 {
+    color: var(--glaucos);
+    font-size: 40px;
+}
+
+/* GAME SECTION */
+.game-section {
+    background-color: var(--alice-blue);
+}
+
+/* Interface container */
+.interface-container {
+    width: 100%;
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.name-input-container {
+    display: flex;
+}
+
+.name-input {
+    margin: 0 20px;
+}
+
+.name-input > label {
+    border-left: -50px;
+    color: var(--glaucos);
+}
+
+.name-input > input[type='text'] {
+    appearance: none;
+
+    border: none;
+    border-radius: 15px;
+    padding: 7px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 300px;
+    font-size: 14px;
+}
+
+.interface-container input[type='button'] {
+    appearance: none;
+    cursor: pointer;
+
+    border: none;
+    padding: 8px 17px;
+    border-radius: 15px;
+    color: white;
+    background-color: var(--glaucos);
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.interface-container input[type='button']:hover {
+    background-color: var(--light-sky-blue);
+    transition: all 0.1s ease-in-out;
+}
+
+/* Board container */
+.board-container {
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 0 50px 50px 50px;
+    margin-top: 20px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    border: 1px solid var(--alice-blue);
+    background-color: var(--baby-blue-eyes);
+    color: var(--glaucos);
+    font-size: 50px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+}
+
+.box:hover {
+    cursor: pointer;
+    background-color: var(--glaucos);
+    transition: all 0.1s ease-in-out;
+}
+
+/* Score container */
+.score-container {
+    height: 100px;
+    width: 100%;
+    background-color: var(--baby-blue-eyes);
+    color: var(--glaucos);
+    font-size: 30px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+}
+
+/* FOOTER SECTION */
+.footer-section {
+    height: 50px;
+    background-color: var(--alice-blue);
+}
+
+.footer-section > p {
+    margin: 0;
+    color: var(--glaucos);
+    text-align: center;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: var(--glaucos);
+}

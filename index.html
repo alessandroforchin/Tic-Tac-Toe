@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e09c74f9ed.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header-section">
+        <h1 class="title">Tic Tac Toe</h1>
+    </header>
+
+    <section class="game-section">
+        <div class="interface-container">
+            <div class="name-input-container">
+                <div class="name-input">
+                    <label for="name">Player One (X):</label>
+                    <input type="text" id="name" name="name" placeholder="Enter player name">
+                </div>
+                <div class="name-input">
+                    <label for="name">Player Two (O):</label>
+                    <input type="text" id="name" name="name" placeholder="Enter player name">
+                </div>
+            </div>
+            <input type="button" value="New game" id="newGame">
+        </div>
+
+        <div class="board-container">
+            <div class="box" data-index="0"></div>
+            <div class="box" data-index="1"></div>
+            <div class="box" data-index="2"></div>
+            <div class="box" data-index="3"></div>
+            <div class="box" data-index="4"></div>
+            <div class="box" data-index="5"></div>
+            <div class="box" data-index="6"></div>
+            <div class="box" data-index="7"></div>
+            <div class="box" data-index="8"></div>
+        </div>
+
+        <div class="score-container"></div>
+    </section>
+
+    <footer class="footer-section">
+        <p>Copyright <span><i class="fa-solid fa-copyright"></i></span> 2022  <span><a href="https://github.com/alessandroforchin">alessandroforchin  </a></span><span><i class="fa-brands fa-github"></i></span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
