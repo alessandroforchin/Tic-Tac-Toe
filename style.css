@@ -114,6 +114,14 @@ body {
     transition: all 0.1s ease-in-out;
 }
 
+.box:focus,
+.box:active {
+    border: none;
+    box-shadow: inset -1px -1px 1px var(--alice-blue);
+    transform: rotate(10deg);
+    transition: all 0.2s ease-in-out;
+}
+
 /* Score container */
 .score-container {
     height: 100px;
